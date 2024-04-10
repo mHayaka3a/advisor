@@ -1,0 +1,17 @@
+html {
+  height: 100%;
+  font-size: 62.5%;
+  font-family: "Noto Sans JP";
+}
+
+body {
+  height: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.main {
+  display: flex;
+}/*# sourceMappingURL=base.css.map */
