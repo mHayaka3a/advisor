@@ -1,0 +1,4 @@
+@mixin fontIcon($codePoint) {
+  content: $codePoint;
+  font-family: "Material Symbols Outlined";
+}

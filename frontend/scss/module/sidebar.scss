@@ -1,0 +1,10 @@
+.side_bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  &_items {
+    width: 100%;
+  }
+}
