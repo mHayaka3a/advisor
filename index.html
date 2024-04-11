@@ -32,66 +32,61 @@
                     </li>
                     <li>
                         <a href=""
-                            ><span class="material-symbols-rounded">
-                                list_alt </span
-                            >予約一覧</a
+                            ><div>
+                                <span class="material-symbols-rounded">
+                                    list_alt
+                                </span>
+                            </div>
+                            予約一覧</a
                         >
                     </li>
                     <li>
                         <a href=""
-                            ><span class="material-symbols-rounded">
-                                person </span
-                            >マイページ</a
+                            ><div>
+                                <span class="material-symbols-rounded">
+                                    person
+                                </span>
+                            </div>
+                            マイページ</a
                         >
                     </li>
                 </ul>
             </nav>
             <div class="styling_list contents">
-                <div class="styling_list_card">
+                <div class="js_modal_open styling_list_card">
+                    <span class="material-symbols-rounded"> filter_none </span>
                     <img
                         src="images/sample_style.jpeg"
                         alt="samples style"
                         class="styling_list_card_img"
                     />
                     <div class="styling_list_card_stylist">
-                        <img src="images/stylist_icon.jpeg" alt="stylist" />
+                        <img
+                            src="images/stylist_icon.jpeg"
+                            alt="stylist icon"
+                        />
                         <span>Nakayama Saori</span>
                     </div>
                 </div>
-                <div class="styling_list_card">
-                    <img
-                        src="images/sample_style.jpeg"
-                        alt="samples style"
-                        class="styling_list_card_img"
-                    />
-                    <div class="styling_list_card_stylist">
-                        <img src="images/stylist_icon.jpeg" alt="stylist" />
-                        <span>Nakayama Saori</span>
-                    </div>
-                </div>
-                <div class="styling_list_card">
-                    <img
-                        src="images/sample_style.jpeg"
-                        alt="samples style"
-                        class="styling_list_card_img"
-                    />
-                    <div class="styling_list_card_stylist">
-                        <img src="images/stylist_icon.jpeg" alt="stylist" />
-                        <span>Nakayama Saori</span>
-                    </div>
-                </div>
-                <div class="styling_list_card">
-                    <img
-                        src="images/sample_style.jpeg"
-                        alt="samples style"
-                        class="styling_list_card_img"
-                    />
-                    <div class="styling_list_card_stylist">
-                        <img src="images/stylist_icon.jpeg" alt="stylist" />
-                        <span>Nakayama Saori</span>
+                <div class="js_overlay styling_list_overlay">
+                    <div class="js_modal styling_list_modal">
+                        <div class="styling_list_modal_imgbox">
+                            <img
+                                src="images/sample_style.jpeg"
+                                alt="style detail"
+                                class="js_open_img styling_list_modal_imgbox_img"
+                            />
+                        </div>
+                        <div class="styling_list_modal_textbox">
+                            <p>
+                                パンツはスタイルが良く見えるハイウエストで細身のシルエットです。
+                                それぞれセットで着ても別で着ても可愛いです。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
+        <script src="./static/webpack/bundle.js"></script>
     </body>
 </html>
