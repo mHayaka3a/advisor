@@ -2,17 +2,17 @@
     position: fixed;
     bottom: 0;
     width: 100%;
-    height: 57px;
+    height: 5.7rem;
     background-color: #ffffff;
     z-index: 20;
 
-    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.12);
 
     .navbar_nav {
         display: flex;
         justify-content: center;
         align-items: baseline;
-        margin: 0px;
+        margin: 0;
         padding: 0;
 
         li {
@@ -22,34 +22,34 @@
                 justify-content: center;
                 align-content: center;
 
-                width: 109px;
-                height: 48px;
-                gap: 4px;
+                width: 10.9rem;
+                height: 4.8rem;
+                gap: 0.4rem;
                 color: #999999;
-                font-size: 10px;
+                font-size: 1rem;
                 font-weight: 500;
-                line-height: 10px;
+                line-height: 1rem;
                 text-align: center;
                 text-decoration: none;
 
                 div {
-                    width: 64px;
-                    height: 32px;
+                    width: 6.4rem;
+                    height: 3.2rem;
 
                     span {
                         margin: 0 auto;
-                        font-size: 28px;
+                        font-size: 2.8rem;
                     }
                 }
             }
 
             a[href*="index"] {
-                margin-top: 5px;
+                margin-top: 0.5rem;
                 pointer-events: none;
                 color: #df85a2;
 
                 div {
-                    border-radius: 40px;
+                    border-radius: 4rem;
                     background-color: rgba(223, 133, 162, 0.16);
                 }
             }
@@ -61,42 +61,42 @@
     .navbar {
         top: 0;
         bottom: unset;
-        height: 64px;
+        height: 6.4rem;
         border: none;
 
         .navbar_nav {
             justify-content: end;
             align-items: center;
-            height: 64px;
-            max-width: 1020px;
+            height: 6.4rem;
+            max-width: 102rem;
             margin: auto;
-            padding-right: 24px;
+            padding-right: 2.4rem;
 
             li {
                 a {
                     display: flex;
                     align-items: center;
-                    font-size: 16px;
-                    margin-left: 4px;
+                    font-size: 1.6rem;
+                    margin-left: 0.4rem;
                     margin-top: 0;
                     color: rgba(0, 0, 0, 0.6);
                     div {
-                        width: 48px;
+                        width: 4.8rem;
                         align-items: center;
                         display: flex;
                         span {
-                            font-size: 24px;
+                            font-size: 2.4rem;
                         }
                     }
 
                     .navbar_nav_text {
                         text-align: left;
-                        width: 116px;
+                        width: 11.6rem;
                     }
                 }
 
                 a[href*="index"] {
-                    border-radius: 1000px;
+                    border-radius: 100rem;
                     background-color: rgba(223, 133, 162, 0.16);
                     margin: 0;
 
@@ -107,15 +107,15 @@
             }
 
             li:nth-child(1) a {
-                width: 164px;
+                width: 16.4rem;
             }
 
             li:nth-child(2) a {
-                width: 132px;
+                width: 13.2rem;
             }
 
             li:nth-child(3) a {
-                width: 148px;
+                width: 14.8rem;
             }
         }
     }
