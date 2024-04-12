@@ -1,99 +1,124 @@
-.styling_list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-bottom: 1px;
+.contents {
+    padding-bottom: 57px;
 
-    &_card {
-        position: relative;
-        width: calc(50% - 0.5px);
-        height: auto;
+    .styling_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
-        .material-symbols-rounded {
-            position: absolute;
-            right: 0;
-            margin: 8px;
-            z-index: 10;
-            color: white;
-        }
+        .styling_list_card {
+            position: relative;
+            width: calc(50% - 0.5px);
+            height: auto;
+            margin-bottom: 1px;
+            line-height: 0;
+            cursor: pointer;
 
-        &_img {
-            max-width: 100%;
-        }
-        &_stylist {
-            display: flex;
-            align-items: center;
-            position: absolute;
-            bottom: 2px;
-            z-index: 10;
-            width: 100%;
-            height: 32px;
-            background-color: rgba(0, 0, 0, 0.5);
-
-            img {
-                object-fit: cover;
-                width: 24px;
-                height: 24px;
-                margin-left: 8px;
-                border-radius: 50%;
+            .material-symbols-rounded {
+                position: absolute;
+                right: 0;
+                margin: 8px;
+                z-index: 10;
+                color: white;
             }
 
-            span {
-                padding-left: 7px;
-                color: rgb(255, 255, 255);
-                font-size: 14px;
+            .styling_list_card_img {
+                max-width: 100%;
             }
-        }
-    }
-
-    &_overlay {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        padding: 56px 0;
-        background: rgba(0, 0, 0, 0.5);
-        z-index: 20;
-        top: 0;
-        left: 0;
-        // display: none;
-    }
-
-    &_modal {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        width: 100%;
-        max-width: 378px;
-        max-height: calc(100% - 112px);
-
-        overflow-y: scroll;
-
-        z-index: 30;
-        background-color: rgb(255, 255, 255);
-        // display: none;
-
-        &_imgbox {
-            &_img {
+            .styling_list_card_stylist {
+                display: flex;
+                align-items: center;
+                position: absolute;
+                bottom: 0;
+                z-index: 10;
                 width: 100%;
-                height: auto;
+                height: 32px;
+                background-color: rgba(0, 0, 0, 0.5);
+
+                img {
+                    object-fit: cover;
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 8px;
+                    border-radius: 50%;
+                }
+
+                span {
+                    padding-left: 7px;
+                    color: rgb(255, 255, 255);
+                    font-size: 14px;
+                }
             }
         }
 
-        &_textbox {
-            max-width: 100%;
-            height: 120px;
-            padding: 16px;
-            color: rgba(0, 0, 0, 0.87);
-            font-size: 14px;
+        // モーダル
+        .styling_list_overlay {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            padding: 56px 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 30;
+            top: 0;
+            left: 0;
+            display: none;
 
-            p {
-                overflow: hidden;
-                display: -webkit-box;
-                -webkit-line-clamp: 4; /* 表示する行数 */
-                -webkit-box-orient: vertical;
+            .styling_list_modal {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                width: 100%;
+                max-width: 474px;
+                max-height: calc(100% - 112px);
+
+                overflow-y: scroll;
+
+                z-index: 40;
+                background-color: rgb(255, 255, 255);
+
+                .styling_list_modal_imgbox {
+                    .styling_list_modal_imgbox_img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .styling_list_modal_textbox {
+                    max-width: 100%;
+                    height: 120px;
+                    padding: 16px;
+                    color: rgba(0, 0, 0, 0.87);
+                    font-size: 14px;
+
+                    p {
+                        line-height: 160%;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4; /* 表示する行数 */
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .contents {
+        position: relative;
+        top: 64px;
+        max-width: 1020px;
+        margin: auto;
+        padding: 40px 24px 80px 24px;
+
+        .styling_list {
+            justify-content: normal;
+
+            .styling_list_card {
+                width: calc(100% / 4);
+                margin-bottom: 0;
             }
         }
     }
