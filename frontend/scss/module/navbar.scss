@@ -1,13 +1,13 @@
 .navbar {
-    display: flex;
-    align-content: center;
-    justify-content: center;
     position: fixed;
     width: 100%;
     background-color: #ffffff;
     z-index: 20;
 
     @include mq(sp) {
+        display: flex;
+        align-content: center;
+        justify-content: center;
         bottom: 0;
         height: 5.7rem;
     }
@@ -19,7 +19,6 @@
 
     .navbar_nav {
         display: flex;
-
         @include mq(sp) {
             justify-content: center;
             align-items: center;
@@ -32,14 +31,13 @@
             height: 6.4rem;
             max-width: 102rem;
             margin: auto;
-            padding: 0 2.4rem;
+            padding-right: 2.4rem;
+            padding-left: 2.4rem;
         }
     }
 }
 
 .navbar_nav_item {
-    padding-right: 2.22rem;
-    padding-left: 2.22rem;
     font-weight: 500;
     line-height: 1;
     text-align: center;
@@ -72,17 +70,18 @@
     }
 
     .navbar_nav_item_iconouter {
-        height: 3.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         @include mq(sp) {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            height: 3.2rem;
             width: 6.4rem;
+            margin-right: 2.24rem;
+            margin-left: 2.24rem;
         }
         @include mq(pc) {
-            display: flex;
-            align-items: center;
+            height: 4.8rem;
             width: 4.8rem;
         }
 
@@ -118,9 +117,12 @@
     }
 }
 
-.navbar_nav_text {
+.navbar_nav_item_text {
     @include mq(pc) {
         text-align: left;
-        width: 11.6rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-right: 1.6rem;
+        padding-left: 0.4rem;
     }
 }
