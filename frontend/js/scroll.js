@@ -1,8 +1,9 @@
 import $ from "../npm/node_modules/jquery";
 
-function header_display(e) {
+export function header_display(e) {
     const headerHeight = $(".header").height();
     const header = $(".header");
+    console.log(headerHeight)
 
     const currentPosition = $(this).scrollTop();
 
