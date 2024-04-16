@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+//mediaqueryを指定する
+@mixin mq($window) {
+    @media #{inspect(map-get($breakpoints, $window))} {
+        @content;
+    }
+}
